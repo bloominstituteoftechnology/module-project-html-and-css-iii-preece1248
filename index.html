@@ -53,12 +53,42 @@
     👉 Part 1 of 2 👈
     Work through the tasks until the boxes match the `task-1.png` design inside the `design` folder.
     Making changes to the HTML is not allowed! The tasks must be completed using CSS alone.
-    */  (id = flexContainer1) {
-        display: flex;
+    */  (id = flexContainer1) {+
+    padding: 10px;
+      display flex;
+      if (flexContainer1.style.display === 'flex') {
+      let flexContainer1 = document.getElementById('flexContainer1');
+    }flexContainer1.style.display = 'flex'; {
+        : display: flex
+        justify-content: space-evenly;
+        align-items: space-evenly;
     }
+  }
+    return flexContainer1;
+  }
+}
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
               (id = flexContainer1) {
+                let flexContainer1 = document.getElementById('flexContainer1');
+                if (flexContainer1.style.display === 'flex') {
+                  flexContainer1.style.display = 'flex';
+                  flexContainer1.style.justifyContent = 'space-evenly';
+                  flexContainer1.style.alignItems = 'space-evenly';
+                }
+                for (let i = 0; i < flexContainer1.length; i++) {
+                  flexContainer1[i].style.display = 'flex';
+                  flexContainer1[i].style.justifyContent = 'space-evenly';
+                  flexContainer1[i].style.alignItems = 'space-evenly';
+                }
+                else {
+                  flexContainer1.style.display = 'flex';
+                  flexContainer1.style.justifyContent = 'space-evenly';
+                  flexContainer1.style.alignItems = 'space-evenly';
+                }
+                padding: 10px;
+                margin: 10px;
+                text-font: 1.2em;
                   justify-content: space-evenly;
                   align-items: space-evenly
               }
@@ -80,7 +110,7 @@
               (id = flexContainer4) {
                 flex-direction: column-reverse;
                 justify-content: space-around;
-                align-items: flex-end;
+                align-items: flex-end; 
               }
               #flexContainer4 .flex-item1.nth-child(3) {
                 order: 3;
